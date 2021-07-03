@@ -17,7 +17,34 @@ body {
     font-family: "inter", sans-serif;
     position: relative;
 }
-
+.visimisi{
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+.visimisi ol{
+    width: 90%;
+    margin: auto;
+}
+.visimisi p{
+    width: 94%;
+    margin: auto;
+}
+.visimisi h2{
+    margin-top: 20px;
+    font-family: Inter;
+    padding-bottom: 20px;
+    border-bottom: solid 3px var(--pr-color);
+    text-transform: uppercase;
+}
+.visimisi h3{
+    margin: 10px 0;
+    font-family: Inter;
+    width: 40px;
+    padding-bottom: 2px;
+    border-bottom: solid 4px var(--pr-color);
+    text-transform: uppercase;
+}
 .container {
     max-width: 1200px;
     padding: 0 10px;
