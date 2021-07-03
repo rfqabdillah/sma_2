@@ -13,6 +13,26 @@
     margin: 0;
     padding: 0;
 }
+.vid{
+    position: relative;
+    width: 100%;
+    padding-bottom: 80px;
+    overflow: hidden;
+    box-shadow: -5px 0 2px 0 rgba(0,0,0,.4);
+    height: 400px;
+}
+.vid h2{
+    text-align: center;
+    margin: auto;
+    font-family: Inter;
+    padding-bottom: 5px;
+    width: 80%;
+    border-bottom: solid 3px var(--pr-color);
+}
+.vid iframe{
+    margin: 0 50%;
+    transform: translateX(-50%);
+}
 .visimisi{
     width: 80%;
     height: auto;
