@@ -28,6 +28,7 @@
     padding-bottom: 5px;
     width: 80%;
     border-bottom: solid 3px var(--pr-color);
+    text-transfrom: uppercase;
 }
 .vid iframe{
     margin: 0 50%;
