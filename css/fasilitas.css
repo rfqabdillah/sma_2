@@ -1,0 +1,44 @@
+body {
+    background: #D0D0D0;
+    position: relative;
+}
+
+.head_fasilitas{
+	min-height: 35vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../aset/test.jpg);
+	background-position: center; 
+    background-size: cover; 
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.judul_fasilitas{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.img-area{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-img{
+    padding: 0 40px 40px;
+}
+
+.single-img img{
+    border-radius: 8px;
+    cursor: pointer;
+}
+footer {
+    transform: translate(0%,120%);
+}

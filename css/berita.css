@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* warna */
+    --pr-color : #52A5EB;
+    --neu1 : #31393C;
+    --neu2 : #DFDFDF;
+    /* font */
+    --title : 36px;
+}
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    height:100%;
+    position: relative;
+}
+.container {
+     box-sizing: border-box;
+     padding: 0 80px;
+     padding-bottom: 300px;
+}
+footer {
+    position:absolute;
+    bottom:0;
+}
+.box_b {
+    display: flex;
+}
+.terbaru {
+    width: 65%;
+    padding: 8px;
+    margin-right: 20px;
+}
+.ter_t {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 0 10px 8px;
+}
+
+.card_t {
+    box-sizing: border-box;
+    height: 180px;
+    width: 100%;
+    padding:8px;
+    /* background: rgba(0, 0, 0, 0.15); */
+    margin-bottom: 20px;
+    display: flex;
+    border-radius: 8px;
+}
+.card_t:hover {
+    box-shadow: 0px 10px 32px -3px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0px 10px 32px -3px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 10px 32px -3px rgba(0,0,0,0.24);
+}
+.card_t .img_t {
+    min-width: 200px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.15);
+    margin-right: 16px;
+    border-radius: 8px;
+}
+.desc_t {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.desc_t p {
+    font-size: 15px;
+    color: #181b1c;
+}
+.desc_t .title_t a {
+    text-decoration: none;
+    color: #181b1c;
+    font-weight: 700;
+    font-size: 18px;
+}
+.desc_t .label {
+    width: 120px;
+    padding: 4px;
+    text-align: center;
+    background: var(--pr-color);
+    border-radius: 4px;
+    color: white;
+    font-size: 14px;
+}
+.desc_t .title_t {
+    font-weight: 600;
+}
+
+/* sidebar */
+.sidebar {
+    right: 80px;
+    margin-top: 60px;
+    width: 400px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.sosmed {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.02);
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.title_s {
+    padding:10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.sosmed ul li {
+    list-style: none;
+}
+.sosmed ul li a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 8px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    color: var(--neu1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+.sosmed ul li:nth-child(1):hover {
+    border-radius: 8px;
+    background: #3b5998;
+}
+.sosmed ul li:nth-child(2):hover {
+    border-radius: 8px;
+    background: #F56040;
+}
+.sosmed ul li:last-child:hover {
+    border-radius: 8px;
+    background: #00acee;
+}
+.sosmed ul li a:hover {
+    color: white;
+}
+.sosmed ul li a i {
+    margin-right: 10px;
+}

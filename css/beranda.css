@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* warna */
+    --pr-color : #52A5EB;
+    --neu1 : #31393C;
+    --neu2 : #DFDFDF;
+    /* font */
+    --title : 36px;
+}
+
+body {
+    background: #DFDFDF;
+    position: relative;
+    height: 2800px;
+}
+/* Parallax Hero */
+body section{
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    display: flex;
+}
+body section img#layer4{
+    position:absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 50px;
+    object-fit: cover;
+}
+body section img#layer5{
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+body section img#layer6{
+    position:absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    object-fit: cover;
+}
+
+body section img#layer3{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+body .hero{
+    position: relative;
+    width: 100%;
+    height: 604px;
+    background-color: #ececec;
+}
+
+/* keunggulan */
+.box_k {
+    height: 600px;
+    position: relative;
+    background: #ECECEC;
+
+}
+.layer_k {
+    float: left;
+    width: 72%;
+    height: 400px;
+    background: var(--pr-color);
+    position: relative;
+    top: 50%;
+    transform: translate(0%,-40%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 180px;
+    color: white;
+}
+.img_k {
+    position: absolute;
+    right: -140px;
+    width: 560px;
+    height: 320px;
+    background:lightslategrey;
+    top: -80px;
+}
+.dotted_k {
+    position: absolute;
+    right: 344px;
+    z-index: -1;
+}
+.title_k {
+    margin-bottom:20px ;
+    font-size: 24px;
+    font-weight: 600;
+}
+.list_k {
+    color: #fafbfc;
+}
+.list_k ul li {
+    list-style: none;
+    display: flex;
+}
+.list_k ul li .list_img {
+    margin-top: 4px;
+    height: 14px;
+    width: 14px;
+    background: white;
+    margin-right: 8px;
+    border-radius: 50%;
+    position: relative;
+}
+.list_k ul li .list_img::after {
+    width: 6px;
+    height: 6px;
+    content: "";
+    background: #d0d0d0;
+    position: absolute;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.list_k ul li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+/*  Prakata Kepsek  */
+body .hero .hero1{
+    float: right;
+    width: 80%;
+    height: 480px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--pr-color);
+}
+body .hero .hero1 .prakata{
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    right: 0;
+    top: 23%;
+    color: #fff;
+}
+body .hero .hero1 .prakata h2{
+    font-family: Inter;
+    font-size: 2em;
+    margin: 30px 0 20px 0;
+}
+body .hero .hero1 .prakata span{
+    font-family: "inter";
+    margin: 10px 0 0px 0;
+    font-weight: bold;
+    float: left;
+    font-size: 3em;
+}
+body .hero .hero1 .prakata p{
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 70%;
+    font-size: 1.5em;
+    font-weight: 200;
+    opacity: 80%;
+}
+body .hero .pro{
+    position: absolute;
+    width: 320px;
+    height: 300px;
+    left: 10%;
+    top: 100px;
+    background-image: url('../aset/kepsek.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    background-color: rgb(98, 98, 99);
+    border-radius: 10px;
+}
+body .hero .pro .nama{
+    position: absolute;
+    width: 320px;
+    height: 97px;
+    left: 0;
+    border-radius: 0 0 10px 10px;
+    background-color: aliceblue;
+    top: 280px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+body .hero .pro .nama h2{
+    font-family: Inter;
+    font-size: 1.2em;
+}
+body .hero .pro .nama h4{
+    font-family: Inter;
+    font-size: 1em;
+    margin-top: 10px;
+    opacity: 60%;
+}
+
+
+.cont{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.contain{
+    width: 100%;
+    height: auto;
+    background-color: var(--neu2);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero img {
+    position: absolute;
+    z-index: 0;
+    bottom: 92px;
+    left: 380px;
+}
+/* Pengumuman */
+.content{
+    padding: 20px 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    text-align: center;
+    z-index: 1;
+    position: relative;
+}
+.cont .content h2{
+    margin-top: 10px;
+    color: var(--pr-color);
+    text-align: center;
+    font-family: Inter;
+
+}
+.cont .content .hr{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+.cont .content .hr span{
+    width: 37%;
+    height: 2px;
+    margin-top: 20px;
+    background-color: var(--pr-color);
+}
+.cont .content .hr svg{
+    color: var(--pr-color);
+}
+.pengumuman{
+    padding: 102px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 40px;
+}
+.pengumuman .card {
+    width: 256px;
+    height: 320px;
+    background: #F1F1F1;
+    border-radius: 8px;
+}
+.card .img {
+    height: 160px;
+    width: 100%;
+    background: #8D8D8D;
+    border-radius: 8px 8px 0 0;
+}
+.card .desc {
+    padding: 20px;
+    border-top: 8px solid var(--pr-color);
+    text-align: left;
+    
+}
+.card .desc a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--neu1);
+}
+#btn_pem {
+    height: 100%;
+    width:240px;
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--pr-color);
+    padding: 10px 16px;
+    border: 4px solid var(--pr-color);
+    border-radius: 8px;
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translate(-50%,-50%);
+}
+#btn_pem:hover  {
+    background: var(--pr-color);
+    color: white;
+}
+.dotted {
+    position: absolute;
+    z-index: -1;
+    bottom: 60px;
+    left: 40px;
+    z-index: -1;
+}
+/* Galeri */
+.galeri {
+    position: relative;
+    height: 540px;
+    background: var(--pr-color);
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 0 40px;
+}
+
+.galeri_top {
+    padding-top: 32px;
+}
+
+.galeri_top p{
+    color: white;
+    font-size: 16px;
+}
+#galeri_title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.swiper-container {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 340px;
+    padding: 40px;
+  }
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 8px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+/* Berita */
+.berita {
+    height: 480px;
+    padding: 40px;
+}
+.berita p {
+    text-align: center;
+}
+#berita_t {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.berita_box {
+    display: flex;
+    padding: 0 80px;
+}
+.berita_l {
+    width: 60%;
+    height: 400px;
+    margin-right: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+.berita_l img {
+    height:100%;
+    width:100%;
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.desc_berita_l {
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.08), rgba(0,0,0,0.9));
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 8px 8px;
+}
+.berita_l:hover {
+    box-shadow: 0px 10px 32px -3px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0px 10px 32px -3px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 10px 32px -3px rgba(0,0,0,0.24);
+}
+.desc_berita_l p{
+    padding-left: 20px;
+    line-height: 32px;
+    font-size: 18px;
+    text-align: left;
+    font-weight: 600;
+    color: white;
+
+}
+.berita_btn {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-top: 16px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 32px 0 6px 0;
+    text-decoration: none;
+    background: #E84B60;
+    color: white;
+    width: 200px;
+    text-align: center;
+}
+.berita_r {
+    width: 40%;
+    height: 400px;
+}
+.berita_card {
+    border-radius: 8px;
+    height: 190px;
+    background: rgba(0, 0, 0, 0.15);
+}
+.berita_card:first-child {
+    margin-bottom: 20px;
+}
+.berita_l .b_data {
+    font-weight: 400;
+    font-size: 12px;
+    background: #E84B60;
+    width: 90px;
+    border-radius: 4px;
+    margin: -30px 0 4px 20px;
+    
+}
+@media screen and (max-width: 990px){
+    body .hero{
+        position: relative;
+        width: 100%;
+        height: 750px;
+        text-align: center;
+        background-color: #DFDFDF;
+    }
+    body .hero .hero1{
+        width: 100%;
+        height: 100%;
+    }
+    body .hero .hero1 .prakata{
+        width: 100%;
+        margin-top:250px ;
+        height: 70%;
+        position: relative;
+        text-align: center;
+    }
+    body .hero .hero1 .prakata span{
+        display: none;
+    }
+    body .hero .hero1 .prakata p{
+        width: 90%;
+    }
+    body .hero .pro{
+        left: 30%;
+    }
+    .cont .content .pengumuman{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .berita .news{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    body {
+        height: 100%;
+    }
+    body .hero .pro{
+        position: absolute;
+        width: 320px;
+        height: 300px;
+        left: 5%;
+        top: 100px;
+        background-image: url('../aset/kepsek.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+        background-color: rgb(98, 98, 99);
+        border-radius: 10px;
+    }
+
+    .hero img {
+        position: absolute;
+        z-index: 0;
+        bottom: 250px;
+        left: 280px;
+    }
+    body .hero .hero1 .prakata h2{
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 40px;
+    }
+    body .hero .hero1 .prakata p{
+        text-align: left;
+        font-size: 16px;
+        line-height: 24px;
+
+    }
+    /* Pengumuman */
+    .content {
+        padding: 60px 0 30px 0;
+    }
+    .pengumuman {
+        padding: 0;
+    }
+    .pengumuman .card {
+        width: 84%;
+        margin-bottom: 32px;
+    }
+    .pengumuman .card:first-child {
+        margin-top: 32px;
+    }
+    .dotted {
+        left: 15px;
+        bottom: 90px;
+    }
+    /* Galeri */
+    .galeri {
+        height: 400px;
+        padding: 0 24px;
+    }
+    .swiper-container {
+        height: 160px;
+    }
+    /* Berita */
+    .berita {
+        padding: 0 20px;
+        position: relative;
+    }
+    .berita_box {
+        flex-wrap: wrap;
+        padding: 0;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,1%);
+    }
+    .berita_l {
+        height: 280px;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .berita_r {
+        width: 100%;
+    }
+    .berita_l .b_data {
+        font-size: 10px;
+        width: 80px;
+    }
+    .berita_btn {
+        padding-top:8px;
+        height: 32px;
+        width: 160px;
+    }
+    /* Keunggulan */
+    .layer_k {
+        padding-left: 20px;
+        width: 96%;
+    }
+    .img_k {
+        width: 70%;
+        height: 50%;
+        left: 10%;
+    }
+    .dotted_k {
+        left: 16px;
+        top: 24px;
+    }
+    .title_k {
+        margin-top: 120px;
+    }
+    .list_k ul li p{
+        font-size: 14px;
+    }
+
+}

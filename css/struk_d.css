@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* warna */
+    --pr-color : #52A5EB;
+    --neu1 : #31393C;
+    --neu2 : #DFDFDF;
+    /* font */
+    --title : 36px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "inter", sans-serif;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+    height:1300px;
+  }
+.str {
+    position: relative;
+    background: white;
+    margin-top: 40px;
+}
+/* Component */
+.card {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    padding: 8px;
+    border: 2px solid var(--pr-color);
+    background: white;
+    border-radius: 4px;
+    height: 100%;
+    width: 200px;
+}
+
+.desc {
+    text-align: center;
+    width: 100%;
+}
+.jb {
+    font-size: 14px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.nm {
+    font-size: 12px;
+    font-weight: 600;
+}
+.card2 {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    padding: 4px;
+    border: 2px solid var(--pr-color);
+    background: white;
+    border-radius: 4px;
+    height: 50px;
+    width: 100%;
+}
+
+.desc2 {
+    text-align: center;
+    width: 100%;
+}
+.jb2 {
+    font-size: 10px;
+    border-bottom: 1px solid black;
+}
+.nm2 {
+    padding-top: 4px;
+    font-size: 10px;
+    font-weight: 600;
+}
+.card2_t {
+    height: 64px;
+}
+/* margin bawah antar level */
+.lv1, .lv2, .lv3, .lv5 {
+    margin-bottom: 40px;
+}
+/* Level 1 */
+.lv1 {
+    position: relative;
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+
+/* Garis tengah */
+.b1::before {
+    z-index: 1;
+    left: 50%;
+    content: "";
+    position: absolute;
+    height: 648px;
+    width: 2px;
+    background: tomato;
+}
+.b1,.b2, .b3, .b4 {
+    padding: 4px;
+}
+
+.c1 {
+    width: 230px;
+}
+/* Level 2 */
+.lv2 {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    padding-right: 120px;
+}
+.b2 {
+    display: flex;
+}
+/* Baris dari kep sekolah ke Komite sekolah */
+.b2::before {
+    content: "";
+    position: absolute;
+    border-bottom:2px dotted lightgray;
+    width: 400px;
+    height: 2px;
+    top: 45%;
+}
+.c2 {
+    position: relative;
+    left: -42%;
+}
+/* Level 3 */
+.lv3 {
+    position: relative;
+}
+.c3 {
+    margin-left: 240px;
+}
+.b3::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 2px;
+    background: tomato;
+    top: 50%;
+    left: 400px;
+}
+/* Level 4 */
+.lv4 {
+    margin-bottom: 50px;
+}
+.b4 {
+    padding-left: 64%;
+    position: relative;
+}
+/* Garis ke garis tengah */
+.b4::before {
+    position: absolute;
+    right: 390px;
+    top: 40px;
+    content: "";
+    width: 200px;
+    height: 2px;
+    background: red;
+}
+.b4::after {
+    content: "";
+    height: 50px;
+    right: 28%;
+    width: 2px;
+    position: absolute;
+    background:red;
+    top: 50px;
+}
+.c4 {
+    margin-bottom: 20px;
+}
+/* Level 5 */
+.lv5 {
+    display: flex;
+    position: relative;
+}
+.b5_a {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.b5_b {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.in_b5 {
+    width: 30%;
+    position: relative;
+}
+.in_b5a {
+    width: 130px;
+    position: relative;
+}
+.card_top {
+    margin-bottom: 20px;
+
+}
+.lv5::before {
+    content: "";
+    left: 50%;
+    top: -16px;
+    transform: translate(-50%,-50%);
+    border-top: 2px solid tomato;
+    border-right: 2px solid tomato;
+    border-left: 2px solid tomato;
+    width: 86%;
+    height: 48px;
+    position: absolute;
+}
+.card_garis {
+    height: 160px;
+    width: 2px;
+    background: tomato;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+}
+.card_garis1 {
+    height: 50px;
+    width: 2px;
+    background: tomato;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+}
+.card_garis2 {
+    height: 50px;
+    width: 2px;
+    background: tomato;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+}
+/* Level 6 */
+.lv6 {
+    display: flex;
+    padding-top: 24px;
+    position: relative;
+}
+.lv6::before {
+    content: "";
+    left: 50%;
+    top: 14px;
+    transform: translate(-50%,-50%);
+    border-top: 2px solid tomato;
+    border-right: 2px solid tomato;
+    border-left: 2px solid tomato;
+    width: 86%;
+    height: 48px;
+    position: absolute;
+}
+.card6_garis::before {
+    content: "";
+    height: 40px;
+    width: 2px;
+    position: absolute;
+    top: -34px;
+    left: 50%;
+    background: tomato;
+}

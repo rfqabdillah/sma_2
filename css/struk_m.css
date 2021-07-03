@@ -1,0 +1,189 @@
+@media  screen and (max-width: 600px) {
+    .container {
+        padding: 0;
+    }
+
+    footer {
+        bottom: 0;
+        transform: translate(-0%,600%);
+    }
+    /* Component */
+    .card {
+        width: 200px;
+    }
+    .jb {
+        font-size: 11px;
+    }
+    .nm {
+        font-size: 14px;
+        padding-top: 8px;
+    }
+    .img {
+        height: 60px;
+        width: 50%;
+    }
+    .card2 {
+        width: 224px;
+        height: 70px;
+        padding: 8px;
+    }
+    .img2 {
+        width: 80px;
+        margin-right: 6px;
+    }
+    .jb2 {
+        font-size: 12px;
+        padding-bottom: 4px;
+    }
+    .nm2 {
+        padding-top: 8px;
+        font-size: 12px;
+    }
+    /* Garis tengah */
+.b1::before {
+    height: 2550px;
+}
+    /* Level 1 */
+    .lv1 {
+        justify-content: flex-start;
+    }
+    .b1::before {
+        left: 5%;
+    }
+    .nm_mj {
+        font-weight: 600;
+        font-size: 12px;
+        padding-bottom: 8px;
+    }
+    /* Level 2 */
+    .lv2 {
+        justify-content: flex-start;
+        margin-bottom: 124px;
+    }
+    .c2 {
+        position: static;
+        margin-right: 10px;
+        height: 80px;
+        width: 240px;
+    }
+    .c2b {
+        position: relative;
+        right: 180px;
+        top: 96px;
+        width: 240px;
+        height: 80px;
+    }
+
+    .b2::before {
+        top: 60px;
+        left: 40px;
+        border-radius: 4px;
+        height: 60px;
+        width: 60px;
+        border-left: 2px dotted rgba(0, 0, 0, 0.15);
+        border-bottom: 2px dotted rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+    /* Level 3 */
+    .c3 {
+        margin-left: 0;
+    }
+    .b3::before {
+        display: none;
+    }
+    /* Level 4 */
+    .b4 {
+        padding-left: 4px;
+    }
+    .b4::before {
+        display: none;
+    }
+    .c4b {
+        margin-left: 70px;
+    }
+    .b4::after {
+        top: 80px;
+        left: 40px;
+        width: 40px;
+        height: 40px;
+        border-left: 2px dotted rgba(0, 0, 0, 0.15);
+        border-bottom: 2px dotted rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        background: transparent;
+    }
+    /* Level 5 */
+    .lv5 {
+        position: relative;
+        padding-left: 70px;
+        display: block;
+    }
+    .b5_a, .b5_b {
+        display: block;
+    }
+    .card_top {
+        margin-top: 40px;
+    }
+    .card_w {
+        position: relative;
+        left: 50px;
+        margin-bottom: 20px;
+    }
+    .lv5::before {
+        height: 1000px;
+        width: 2px;
+        border: none;
+        background: tomato;
+        position: absolute;
+        left: 100px;
+        top: 560px;
+    }
+    .lv5::after {
+        content: "";
+        position: absolute;
+        width: 54px;
+        height: 2px;
+        background: tomato;
+        left: 24px;
+        top: 32px;
+    }
+    .card_garis ,.card_garis1, .card_garis2 {
+        display: none;
+    }
+    .card_w::before {
+        content: "";
+        width: 22px;
+        height: 2px;
+        left: -22px;
+        background: tomato;
+        top: 50%;
+        position: absolute;
+    }
+    /* Level 6 */
+    .lv6 {
+        display: block;
+        padding-left: 70px;
+    }
+    .lv6::before {
+        height: 640px;
+        width: 2px;
+        background: tomato;
+        border: none;
+        top: 430px;
+        left: 100px;
+    }
+    .card6_garis::before {
+        display: none;
+    }
+    .lv6::after {
+        content: "";
+        position: absolute;
+        top: 80px;
+        background: tomato;
+        width: 54px;
+        height: 2px;
+        left: 24px;
+    }
+    .nm3 {
+        font-size: 20px;
+    }
+}

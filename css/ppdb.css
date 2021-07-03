@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    /* warna */
+    --pr-color : #52A5EB;
+    --neu1 : #31393C;
+    --neu2 : #DFDFDF;
+    /* font */
+    --title : 36px;
+}
+
+* {box-sizing: border-box;}
+body {font-family: "inter", sans-serif;}
+.mySlides {display: none;}
+.slideshow-container img {
+    vertical-align: middle;
+    height: 300px;
+    object-fit: cover;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  height: 300px;
+}
+.slideshow-container span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.slideshow-container .text{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 13%;
+    color: whitesmoke;
+    font-size: 1.7em;
+    font-family: Inter;
+    text-align: center;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  height: 300px;
+}
+
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+/*   Konten   */
+.Konten{
+    width: 90%;
+    position: relative;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.tb1{
+  width: 100%;
+  margin-top: 30px;
+  border: solid 1px rgb(160, 160, 160);
+  border-radius: 10px;
+  font-family: Inter;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.tb1 .td1{
+  font-family: Inter;
+  font-size: 14px;
+  color: aqua;
+  padding: 10px 0;
+  border-bottom: dotted 1px rgb(150, 150, 150);
+  font-weight: 400;
+}
+table tr th{
+  margin-bottom: 10px;
+  border-bottom: solid 1px black;
+}
+table tr td{
+  padding-bottom: 50px;
+}
+
+table tr td input[type="text"], table tr td input[type="email"]{
+  width: 200px;
+  height: 20px;
+  border-radius: 3px;
+  outline: none;
+  border: solid 0.3px rgb(179, 179, 179);
+}
+table tr td input[type="submit"]{
+  padding: 7px 15px; 
+  border-radius: 4px;
+  background-color: var(--pr-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: whitesmoke;
+}
+table tr td textarea, table tr td select{
+  width: 200px;
+}
+table tr td input::placeholder{
+  padding: 30px 10px;
+}
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
